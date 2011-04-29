@@ -44,14 +44,14 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="C:\user\Codes\VC9\directshow\baseclasses"
+				AdditionalIncludeDirectories="C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\multimedia\directshow\baseclasses"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;SCFH_DSF_EXPORTS;_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
-				DebugInformationFormat="4"
+				DebugInformationFormat="3"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -64,10 +64,10 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="winmm.lib strmbasd.lib d3d9.lib ddraw.lib psapi.lib"
+				AdditionalDependencies="winmm.lib strmbasd.lib psapi.lib"
 				OutputFile="$(OutDir)\scfh.ax"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="C:\user\Codes\VC9\directshow\baseclasses\Debug"
+				AdditionalLibraryDirectories="C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\multimedia\directshow\baseclasses\Debug"
 				ModuleDefinitionFile="scfh_dsf.def"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -121,7 +121,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="C:\user\Codes\VC9\directshow\baseclasses"
+				AdditionalIncludeDirectories="C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\multimedia\directshow\baseclasses"
 				PreprocessorDefinitions="WIN32;WIN64;_DEBUG;_WINDOWS;_USRDLL;SCFH_DSF_EXPORTS;_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -141,10 +141,10 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="winmm.lib strmbasd.lib d3d9.lib ddraw.lib psapi.lib"
+				AdditionalDependencies="winmm.lib strmbasd.lib psapi.lib"
 				OutputFile="$(OutDir)\scfh64.ax"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="C:\user\Codes\VC9\directshow\baseclasses\x64\Debug"
+				AdditionalLibraryDirectories="C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\multimedia\directshow\baseclasses\x64\Debug"
 				ModuleDefinitionFile="scfh_dsf.def"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -199,7 +199,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="C:\user\Codes\VC9\directshow\baseclasses"
+				AdditionalIncludeDirectories="C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\multimedia\directshow\baseclasses"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;SCFH_DSF_EXPORTS;_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -218,10 +218,10 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="winmm.lib strmbase.lib d3d9.lib ddraw.lib psapi.lib"
+				AdditionalDependencies="winmm.lib strmbase.lib psapi.lib"
 				OutputFile="$(OutDir)\scfh.ax"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="c:\User\Codes\VC9\directshow\baseclasses\Release"
+				AdditionalLibraryDirectories="C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\multimedia\directshow\baseclasses\Release"
 				ModuleDefinitionFile="scfh_dsf.def"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -279,7 +279,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="C:\user\Codes\VC9\directshow\baseclasses"
+				AdditionalIncludeDirectories="C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\multimedia\directshow\baseclasses"
 				PreprocessorDefinitions="WIN32;WIN64;NDEBUG;_WINDOWS;_USRDLL;SCFH_DSF_EXPORTS;_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -298,10 +298,10 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="winmm.lib strmbase.lib d3d9.lib ddraw.lib psapi.lib"
+				AdditionalDependencies="winmm.lib strmbase.lib psapi.lib"
 				OutputFile="$(OutDir)\scfh64.ax"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="C:\user\Codes\VC9\directshow\baseclasses\x64\Release"
+				AdditionalLibraryDirectories="C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\multimedia\directshow\baseclasses\x64\Release"
 				ModuleDefinitionFile="scfh_dsf.def"
 				GenerateDebugInformation="true"
 				SubSystem="2"

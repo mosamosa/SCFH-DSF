@@ -11,6 +11,8 @@
 #include "resizedd.h"
 #include "tools.h"
 
+typedef HRESULT (WINAPI *typeDirectDrawCreate)(GUID FAR *, LPDIRECTDRAW FAR *, IUnknown FAR *);
+
 HRESULT RecreateSurface(LPDIRECTDRAW lpDD, LPDIRECTDRAWSURFACE *lplpDDS, int width, int height)
 {
 	HRESULT hr;
@@ -68,8 +70,26 @@ public:
 	static bool init(HWND hwnd)
 	{
 		HRESULT hr;
+		HMODULE hDll;
+		typeDirectDrawCreate pDirectDrawCreate;
 
-		hr = DirectDrawCreate(NULL, &dd, NULL);
+		hDll = LoadLibrary(L"ddraw.dll");
+		if(!hDll)
+		{
+			dprintf("ddraw.dllÇ™ë∂ç›ÇµÇ‹ÇπÇÒ.");
+
+			return false;
+		}
+
+		pDirectDrawCreate = (typeDirectDrawCreate)GetProcAddress(hDll, "DirectDrawCreate");
+		if(!pDirectDrawCreate)
+		{
+			dprintf("DirectDrawCreateÇ™ë∂ç›ÇµÇ‹ÇπÇÒ.");
+
+			return false;
+		}
+
+		hr = pDirectDrawCreate(NULL, &dd, NULL);
 		if(FAILED(hr))
 		{
 			dprintf("DirectDrawÇÃèâä˙âªÇ…é∏îsÇµÇ‹ÇµÇΩ. (%08x)", hr);

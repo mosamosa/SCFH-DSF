@@ -1,0 +1,5 @@
+* How to build
+1.Installing Windows SDK. (Default project settings assumes SDK version 7.1)
+2.Open DirectShow baseclasses project and build. 
+  {SDK_DIR}\Samples\multimedia\directshow\baseclasses\baseclasses.sln
+3.Open SCFH DSF project and build.
